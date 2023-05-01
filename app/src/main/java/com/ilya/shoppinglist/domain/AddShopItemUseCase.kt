@@ -1,8 +1,8 @@
 package com.ilya.shoppinglist.domain
 
-class AddShopItemUseCase {
+class AddShopItemUseCase(private val shopListRepository: ShopListRepository) {
 
-    fun addShopList(ShopItem: ShopItem){
-        TODO()
+    fun addShopList(shopItem: ShopItem){
+        shopListRepository.addShopList(shopItem)
     }
 }

@@ -1,8 +1,8 @@
 package com.ilya.shoppinglist.domain
 
-class DeleteShopItemUseCase{
+class DeleteShopItemUseCase(private val shopListRepository: ShopListRepository) {
 
-    fun deleteShopList(ShopItemId: ShopItem){
-        TODO()
+    fun deleteShopList(shopItemId: ShopItem){
+        shopListRepository.deleteShopList(shopItemId)
     }
 }

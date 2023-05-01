@@ -2,7 +2,7 @@ package com.ilya.shoppinglist.domain
 
 class EditShopItemUseCase(private val shopListRepository: ShopListRepository) {
 
-    fun editShopList(shopItem: ShopItem){
-        shopListRepository.editShopList(shopItem)
+    fun editShopItem(shopItem: ShopItem){
+        shopListRepository.editShopItem(shopItem)
     }
 }
